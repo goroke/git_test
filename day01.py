@@ -1,10 +1,14 @@
-# for countdown in 5, 4, 3, 2, 1, 'hey!':
-#     print(countdown)
+# Dictionary
+days = {'Jan': 31, 'Feb': 28, 'Mar': 31, 'Apr': 30, 'May': 31, 'Jun': 30,
+        'Jul': 31, 'Aug': 31, 'Sep': 30, 'Oct': 31, 'Nov': 30, 'Dec': 31}
 
-countdown_list = 5, 4, 3, 2, 1, 'hey!'
-for countdown in countdown_list:
-    print(countdown)
+month = 'Jan'
 
-print(countdown_list[-3])
+# old style
+print('%s has %d days' % (month, days[month]))
 
-print('프로그램 종료')
+# format function
+print('{0} has {1} days'.format(month, days[month]))
+
+# using f-string
+print(f'{month} has {days[month]} days')
