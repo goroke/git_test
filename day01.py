@@ -1,5 +1,10 @@
-# (100°F − 32) × 5/9 = 37.778°C
+# for countdown in 5, 4, 3, 2, 1, 'hey!':
+#     print(countdown)
 
-fahrenheit = float(input('화씨 온도 : '))
-celsius    = (fahrenheit - 32.) * 5./9.
-print(f'화씨 온도 {fahrenheit}도는 섭씨 온도 {celsius:.4f}도입니다.')
+countdown_list = 5, 4, 3, 2, 1, 'hey!'
+for countdown in countdown_list:
+    print(countdown)
+
+print(countdown_list[-3])
+
+print('프로그램 종료')
